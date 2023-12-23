@@ -1,0 +1,15 @@
+<div class="productList">
+    <div class="product-row" *ngFor="let product of foodItems">
+      <div class="card">
+        <h2>{{product.title | uppercase}}</h2>
+        <p>{{product.description}}</p>
+        <p>{{product.price}}</p>
+        <p>{{product.rating}}</p>
+       <div class="prd-img"><img [src]="product.image" alt="Not found"  class="sizing"></div> 
+        <div class="prd-btn"><button>Buy Now</button></div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class = "product1" style="display: none"></div>
+  <div class = "product2" style="visibility: hidden;"></div>
+  <div class = "product3" *ngIf="false"></div> -->
