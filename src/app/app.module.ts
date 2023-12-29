@@ -10,6 +10,7 @@ import { NotificationComponent } from './notification/notification.component';
 import { ProductsComponent } from './products/products.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     NavComponent,
     NotificationComponent,
     ProductsComponent,
-    SearchComponent
+    SearchComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
