@@ -19,7 +19,8 @@ export class ProductsComponent implements OnInit {
   "price": "₹200",
   "rating": 4.2,
   "location": "Mumbai",
-  "image":"/assets/chocolates.jpg"
+  "image":"/assets/chocolates.jpg",
+  "Availability":"Available"
   },
   {
   "title": "Biscuits",
@@ -27,7 +28,8 @@ export class ProductsComponent implements OnInit {
   "price": "₹250",
   "rating": 4.5,
   "location": "New York",
-  "image":"/assets/biscuits.jpg"
+  "image":"/assets/biscuits.jpg",
+  "Availability":" Not Available"
   },
   {
   "title": "Ice Cream",
@@ -35,7 +37,8 @@ export class ProductsComponent implements OnInit {
   "price": "₹180",
   "rating": 4.0,
   "location": "Tokyo",
-  "image":"/assets/ice.jpg"
+  "image":"/assets/ice.jpg",
+  "Availability":"Available"
   },
   {
   "title": "Cookies",
@@ -43,7 +46,8 @@ export class ProductsComponent implements OnInit {
   "price": "₹150",
   "rating": 4.3,
   "location": "Mexico City",
-  "image":"/assets/cookies.jpg"
+  "image":"/assets/cookies.jpg",
+  "Availability":"Available"
   },
   {
   "title": "Fruits",
@@ -51,7 +55,8 @@ export class ProductsComponent implements OnInit {
   "price": "₹120",
   "rating": 4.1,
   "location": "London",
-  "image":"/assets/fruits.webp"
+  "image":"/assets/fruits.webp",
+  "Availability":"Not Available"
   }
   ];
 
