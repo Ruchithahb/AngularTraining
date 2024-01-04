@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
+  products: any;
 
   constructor() { }
 
@@ -33,7 +34,7 @@ export class ProductsComponent implements OnInit {
   },
   {
   "title": "Ice Cream",
-  "description": "Satisfying sweet cravings with a chocolatey delight. 🍫😋.",
+  "description": "Satisfying sweet cravings with a chocolatey delight.",
   "price": "₹180",
   "rating": 4.0,
   "location": "Tokyo",
@@ -59,5 +60,4 @@ export class ProductsComponent implements OnInit {
   "Availability":"Not Available"
   }
   ];
-
 }

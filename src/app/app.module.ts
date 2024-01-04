@@ -12,6 +12,8 @@ import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 import { AboutComponent } from './about/about.component';
+import { FiltComponent } from './filt/filt.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { AboutComponent } from './about/about.component';
     ProductsComponent,
     SearchComponent,
     SignupComponent,
-    AboutComponent
+    AboutComponent,
+    FiltComponent,
   ],
   imports: [
     BrowserModule,
