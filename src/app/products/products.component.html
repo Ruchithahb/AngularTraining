@@ -1,6 +1,8 @@
 <div>
   <app-search></app-search>
-  <app-filt></app-filt>
+  <app-filt [all]="getTotalProducts()"
+  [available]="getTotalAvailable()"
+  [notAvailable] ="getTotalNotAvailable()" ></app-filt>
 
 </div>
 <div class="productList">

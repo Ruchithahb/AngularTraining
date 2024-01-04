@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-filt',
@@ -11,10 +11,10 @@ export class FiltComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  all: number = 10;
-  available: number =6;
-  notAvailable: number=4;
-
+  @Input() all: number = 0;
+  @Input() available: number =0;
+  @Input() notAvailable: number =0;
+  
 
 
 }

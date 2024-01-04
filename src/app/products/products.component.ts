@@ -30,7 +30,7 @@ export class ProductsComponent implements OnInit {
   "rating": 4.5,
   "location": "New York",
   "image":"/assets/biscuits.jpg",
-  "Availability":" Not Available"
+  "Availability":"Not Available"
   },
   {
   "title": "Ice Cream",
@@ -60,4 +60,16 @@ export class ProductsComponent implements OnInit {
   "Availability":"Not Available"
   }
   ];
+
+  getTotalProducts(){
+    return this.foodItems.length;
+  }
+  getTotalAvailable(){
+    return this.foodItems.filter(prod => prod.Availability === 'Available').length;
+
+  }
+  getTotalNotAvailable(){
+    return this.foodItems.filter(prod => prod.Availability === 'Not Available').length;
+
+  }
 }
