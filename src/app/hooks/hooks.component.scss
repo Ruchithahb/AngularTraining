@@ -1,0 +1,42 @@
+.ecommerce-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add your additional CSS styles for the component here */
+  /* Customize the styles based on your design preferences */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* ... Existing styles ... */
+
+.output-section {
+    margin-top: 20px;
+  }
+  
+  .output-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  

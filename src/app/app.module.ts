@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 import { AboutComponent } from './about/about.component';
 import { FiltComponent } from './filt/filt.component';
+import { HooksComponent } from './hooks/hooks.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { FiltComponent } from './filt/filt.component';
     SignupComponent,
     AboutComponent,
     FiltComponent,
+    HooksComponent,
   ],
   imports: [
     BrowserModule,

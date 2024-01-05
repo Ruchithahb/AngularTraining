@@ -1,0 +1,17 @@
+<div class="ecommerce-container">
+    <h2>E-shopping</h2>
+  
+    <!-- Input field with two-way data binding -->
+    <label for="inputData">Enter Data:</label>
+    <input id="inputData" [(ngModel)]="inputData" />
+  
+    <!-- Button to trigger a custom event -->
+    <button (click)="onButtonClick()">Click</button>
+
+    <div class="output-section">
+        <h3>Output:</h3>
+        <p>{{ outputData }}</p>
+    </div>
+  
+  </div>
+  
