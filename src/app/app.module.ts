@@ -14,6 +14,8 @@ import { SignupComponent } from './signup/signup.component';
 import { AboutComponent } from './about/about.component';
 import { FiltComponent } from './filt/filt.component';
 import { HooksComponent } from './hooks/hooks.component';
+import { PipeComponent } from './pipe/pipe.component';
+import { FormatPricePipe, } from './price.pipe';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { HooksComponent } from './hooks/hooks.component';
     AboutComponent,
     FiltComponent,
     HooksComponent,
+    PipeComponent,
+    FormatPricePipe
   ],
   imports: [
     BrowserModule,

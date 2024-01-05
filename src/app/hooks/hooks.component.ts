@@ -5,7 +5,7 @@ import { Component, OnInit , OnChanges,SimpleChanges,DoCheck,AfterViewInit,OnDes
   templateUrl: './hooks.component.html',
   styleUrls: ['./hooks.component.scss']
 })
-export class HooksComponent implements OnInit {
+export class HooksComponent implements OnInit,OnChanges, DoCheck, AfterViewInit, OnDestroy {
   inputData: string = '';
   outputData: string = '';
 

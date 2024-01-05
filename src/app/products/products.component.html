@@ -13,7 +13,7 @@
       <div class="card" [ngStyle]="{backgroundColor:product.Availability === 'Available' ? '#D5F5E3': '#FADBDB'}">
         <h2>{{product.title | uppercase}}</h2>
         <p>{{product.description}}</p>
-        <p>{{product.price}}</p>
+        <p>{{product.price | formatPrice}}</p>
         <p>{{product.rating}}</p>
         <p [ngStyle]="{color: product.Availability === 'Available' ? 'Green' : 'Red'}">{{product.Availability}}</p>
        <div class="prd-img"><img [src]="product.image" alt="Not found"  class="sizing"></div> 
