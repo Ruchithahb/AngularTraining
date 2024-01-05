@@ -1,12 +1,15 @@
 <div>
-  <app-search></app-search>
+  <app-search ></app-search>
   <app-filt [all]="getTotalProducts()"
   [available]="getTotalAvailable()"
-  [notAvailable] ="getTotalNotAvailable()" ></app-filt>
+  [notAvailable] ="getTotalNotAvailable()"
+(filterRadioButtonSelectionChanged)="onFilterRadioButtonChanged($event)">
+</app-filt>
 
 </div>
-<div class="productList">
-    <div class="product-row" *ngFor="let product of foodItems">
+<ng-container *ngFor="let product of foodItems">
+  <div class="productList">
+    <div class="product-row" *ngIf="prodCountRadioButton === 'All' || prodCountRadioButton === product.Availability">
       <div class="card" [ngStyle]="{backgroundColor:product.Availability === 'Available' ? '#D5F5E3': '#FADBDB'}">
         <h2>{{product.title | uppercase}}</h2>
         <p>{{product.description}}</p>
@@ -21,6 +24,8 @@
       </div>
     </div>
   </div>
+</ng-container>
+
 <!-- <div class = "product1" style="display: none"></div>
 <div class = "product2" style="visibility: hidden;"></div>
 <div class = "product3" *ngIf="false"></div>  -->

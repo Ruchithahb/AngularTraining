@@ -51,3 +51,8 @@ body, h1, h2, p, button {
     margin: 1px 20px 2px 25px;
     
   }
+
+  .ng-container{
+    flex: 0 0 calc(33.333% - 20px); /* Adjust the width as needed */
+    margin: 10px;
+  }

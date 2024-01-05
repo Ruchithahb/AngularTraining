@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input,EventEmitter, Output } from '@angular/core';
+// import { EventEmitter } from 'stream';
 
 @Component({
   selector: 'app-filt',
@@ -15,6 +16,14 @@ export class FiltComponent implements OnInit {
   @Input() available: number =0;
   @Input() notAvailable: number =0;
   
+  selectedRadioButtonValue: string = 'All';
 
+  @Output()
+  filterRadioButtonSelectionChanged: EventEmitter<string> = new EventEmitter<string>();
+
+  onRadioButtonSelectionChanged(){
+    this.filterRadioButtonSelectionChanged.emit(this.selectedRadioButtonValue);
+    console.log(this.selectedRadioButtonValue);
+  }
 
 }
