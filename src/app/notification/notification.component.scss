@@ -1,13 +1,41 @@
-.notify{
-    margin:10px 0px;
+// .notify{
+//     margin:10px 0px;
+//     padding: 10px 20px;
+//     background-color: #fad7a0;
+//     text-align: center;
+    
+// }
+// p{
+//     font-size: 12px;
+// }
+// .close{
+//     float:right;
+//     margin-top: -25px;
+// }
+
+/* notification.component.scss */
+
+/* notification.component.scss */
+
+/* notification.component.scss */
+
+.notify {
+    margin: 10px 0px;
     padding: 10px 20px;
-    background-color: #fad7a0;
     text-align: center;
-}
-p{
-    font-size: 12px;
-}
-.close{
+  }
+  
+  .close {
     float: right;
     margin-top: -25px;
-}
+  }
+  
+  .custom-close-btn {
+    /* Your custom styling for the 'X' */
+    font-size: 20px;
+    font-weight: bold;
+    color: #dc3545; /* Red color, you can adjust this to your preference */
+    cursor: pointer;
+    /* Add any other styles you want */
+  }
+  

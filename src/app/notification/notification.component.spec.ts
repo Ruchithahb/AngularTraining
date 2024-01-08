@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { NotificationComponent } from './notification.component';
 
 describe('NotificationComponent', () => {
@@ -8,9 +7,8 @@ describe('NotificationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NotificationComponent ]
-    })
-    .compileComponents();
+      declarations: [NotificationComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -22,4 +20,15 @@ describe('NotificationComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should initialize displayNotification to false', () => {
+    expect(component.displayNotification).toBeFalse();
+  });
+
+  it('should set displayNotification to true on closeNotification()', () => {
+    component.closeNotification();
+    expect(component.displayNotification).toBeTrue();
+  });
+
+  // Add more test cases based on your component's behavior
 });

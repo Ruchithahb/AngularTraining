@@ -1,31 +1,33 @@
-<div>
-  <app-search ></app-search>
-  <app-filt [all]="getTotalProducts()"
-  [available]="getTotalAvailable()"
-  [notAvailable] ="getTotalNotAvailable()"
-(filterRadioButtonSelectionChanged)="onFilterRadioButtonChanged($event)">
-</app-filt>
+<!-- products.component.html -->
 
+<div>
+  <app-search></app-search>
+  <app-filt
+    [all]="getTotalProducts()"
+    [available]="getTotalAvailable()"
+    [notAvailable]="getTotalNotAvailable()"
+    (filterRadioButtonSelectionChanged)="onFilterRadioButtonChanged($event)"
+  ></app-filt>
 </div>
-<ng-container *ngFor="let product of foodItems">
+
+<!-- Button to add a new product -->
+<button (click)="addProduct()">Add Product</button>
+
+<ng-container *ngFor="let product of foodItems; let i = index">
   <div class="productList">
     <div class="product-row" *ngIf="prodCountRadioButton === 'All' || prodCountRadioButton === product.Availability">
-      <div class="card" [ngStyle]="{backgroundColor:product.Availability === 'Available' ? '#D5F5E3': '#FADBDB'}">
-        <h2>{{product.title | uppercase}}</h2>
-        <p>{{product.description}}</p>
-        <p>{{product.price | formatPrice}}</p>
-        <p>{{product.rating}}</p>
-        <p [ngStyle]="{color: product.Availability === 'Available' ? 'Green' : 'Red'}">{{product.Availability}}</p>
-       <div class="prd-img"><img [src]="product.image" alt="Not found"  class="sizing"></div> 
-        <div class="prd-btn" *ngIf="product.Availability === 'Available'"><button>Buy Now</button></div>
-        <!-- <ng-template #notifyme>
-          <button class="prd-not" >Notify me</button>
-        </ng-template> -->
+      <div class="card" [ngStyle]="{ backgroundColor: product.Availability === 'Available' ? '#D5F5E3' : '#FADBDB' }">
+        <h2>{{ product.title | uppercase }}</h2>
+        <p>{{ product.description }}</p>
+        <p>{{ product.price | formatPrice }}</p>
+        <p>{{ product.rating }}</p>
+        <p [ngStyle]="{ color: product.Availability === 'Available' ? 'Green' : 'Red' }">{{ product.Availability }}</p>
+        <div class="prd-img"><img [src]="product.image" alt="Not found" class="sizing"></div>
+        <div class="prd-btn" *ngIf="product.Availability === 'Available'">
+          <button>Buy Now</button>
+          <button (click)="deleteProduct(i)">Delete</button>
+        </div>
       </div>
     </div>
   </div>
 </ng-container>
-
-<!-- <div class = "product1" style="display: none"></div>
-<div class = "product2" style="visibility: hidden;"></div>
-<div class = "product3" *ngIf="false"></div>  -->

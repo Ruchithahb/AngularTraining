@@ -58,4 +58,15 @@ export class ProductListService {
   getProducts(){
     return this.foodProducts
   }
+
+  addProduct(newProduct: any): void {
+    this.foodProducts.push(newProduct);
+  }
+
+  deleteProduct(index: number): void {
+    if (index >= 0 && index < this.foodProducts.length) {
+      this.foodProducts.splice(index, 1);
+    }
+  }
 }
+

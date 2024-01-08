@@ -29,10 +29,14 @@ export class SignupComponent implements OnInit {
       email:'',
       password:''
     };
+
+    alert("thanks for the response");
   }
   onLogin(){
 
 
   }
+
+
 
 }
