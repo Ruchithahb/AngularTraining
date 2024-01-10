@@ -11,10 +11,10 @@ export class NotificationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  displayNotification: boolean= false
+  hideNotification: boolean= false
 
   closeNotification(){
-    this.displayNotification = true;
+    this.hideNotification = true;
   }
 
 }

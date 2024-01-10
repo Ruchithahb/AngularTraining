@@ -1,0 +1,46 @@
+<div class="right-side">
+  <div class="receipt" *ngFor="let product of products">
+    <h2 class="receipt-heading">Buy Item</h2>
+    <div>
+      <table class="table">
+        <tr>
+          <td>
+            {{ product.title }}
+            <div class="quantity-container">
+              <button (click)="decrementQuantity(product)">-</button>
+              <!-- <input type="number" id="quantity" [ngModel]="product.productQuantity" (ngModelChange)="onQuantityChange(product, $event)" min="0"> -->
+              <button (click)="incrementQuantity(product)">+</button>
+              </div>
+              <!-- <button class="yaa"(click)="deleteProduct(product)">
+                <img src="/assets/images/dustbin.png" alt="Delete" width="20" height="20">
+              </button> -->
+            <!-- </div> -->
+       
+
+          </td>
+          <td class="price">Rs. {{ product.price }}</td>
+        </tr>
+        <tr>
+          <td>Discount</td>
+          <td class="price">Rs. 0.00 </td>
+        </tr>
+        <tr>
+          <td>Subtotal</td>
+          <td class="price">Rs. {{ product.price }}</td>
+        </tr>
+        <tr>
+          <td>Tax</td>
+          <td class="price">Rs. 60.41</td>
+        </tr>
+        <tr class="total">
+          <td>Total</td>
+          <td class="price">Rs. {{ product.price +  60.41 | number:'1.0-0' }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- Other content remains unchanged -->
+</div>
+  <div class="button">
+    <button onclick="onBuyNowClick()" routerLink="/payment">Buy Now</button>
+  </div>

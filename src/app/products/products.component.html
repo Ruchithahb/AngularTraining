@@ -11,7 +11,7 @@
 </div>
 
 <!-- Button to add a new product -->
-<button (click)="addProduct()">Add Product</button>
+<!-- <button (click)="addProduct()">Add Product</button> -->
 
 <ng-container *ngFor="let product of foodItems; let i = index">
   <div class="productList">
@@ -25,7 +25,9 @@
         <div class="prd-img"><img [src]="product.image" alt="Not found" class="sizing"></div>
         <div class="prd-btn" *ngIf="product.Availability === 'Available'">
           <button>Buy Now</button>
-          <button (click)="deleteProduct(i)">Delete</button>
+          <!-- <button routerLink="/cart" >Add to cart</button> (click)="addToCart(product) -->
+          <button routerLink="/cart" >Add to cart</button>
+          <!-- <button (click)="deleteProduct(i)">Delete</button> -->
         </div>
       </div>
     </div>

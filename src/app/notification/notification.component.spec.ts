@@ -22,12 +22,12 @@ describe('NotificationComponent', () => {
   });
 
   it('should initialize displayNotification to false', () => {
-    expect(component.displayNotification).toBeFalse();
+    expect(component.hideNotification).toBeFalse();
   });
 
   it('should set displayNotification to true on closeNotification()', () => {
     component.closeNotification();
-    expect(component.displayNotification).toBeTrue();
+    expect(component.hideNotification).toBeTrue();
   });
 
   // Add more test cases based on your component's behavior

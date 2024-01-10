@@ -1,0 +1,18 @@
+<!-- rating.component.html -->
+
+<form [formGroup]="ratingForm" (ngSubmit)="submitRatingForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" formControlName="name">
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" formControlName="email">
+  
+    <div class="rating">
+      <div *ngFor="let star of starsArray; let i = index" (click)="setRating(i + 1)">
+        <span [class]="i < selectedRating ? 'filled' : 'empty'">&#9733;</span>
+      </div>
+    </div>
+  
+    <button type="submit" [disabled]="!ratingForm.valid || selectedRating === null">Submit Rating</button>
+  </form>
+  

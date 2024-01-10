@@ -1,0 +1,56 @@
+/* rating.component.css */
+
+form {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .rating div {
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .rating div span {
+    font-size: 2rem;
+    color: #ddd;
+    transition: color 0.3s;
+  }
+  
+  .rating div span.filled {
+    color: #ffc107;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+
+  

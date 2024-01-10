@@ -1,8 +1,19 @@
-<div class = "header">
+<!-- <div class = "header">
     <div class = "site-image">
         <img [src] ="source" height = "240" width = "320">
     </div>
     <div class = "site-slogan">
         <h2> {{title}}</h2>
     </div>
-</div>
+</div> -->
+<div class="container-fluid header">
+    <div class="row">
+      <div class="col-md-6 site-image">
+        <img [src]="source" class="img-fluid" alt="Site Image">
+      </div>
+      <div class="col-md-6 site-slogan">
+        <h2>{{ title }}</h2>
+      </div>
+    </div>
+  </div>
+  

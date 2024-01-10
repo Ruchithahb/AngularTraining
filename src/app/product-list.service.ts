@@ -52,21 +52,16 @@ export class ProductListService {
   "Availability":"Not Available"
   }
   ];
+  
 
   constructor() { }
 
   getProducts(){
     return this.foodProducts
   }
-
-  addProduct(newProduct: any): void {
-    this.foodProducts.push(newProduct);
-  }
-
-  deleteProduct(index: number): void {
-    if (index >= 0 && index < this.foodProducts.length) {
-      this.foodProducts.splice(index, 1);
-    }
-  }
+  // addToCart(product: any): void {
+    // this.car.addToCart(product);
+  // }
+  
 }
 
