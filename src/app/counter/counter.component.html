@@ -1,0 +1,7 @@
+<div>
+    <p>Current Count: {{ counter$ | async }}</p>
+    <button (click)="toggleCounter()">
+      {{ destroy$.isStopped ? 'Start' : 'Stop' }} Counter
+    </button>
+  </div>
+  

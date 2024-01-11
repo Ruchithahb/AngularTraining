@@ -36,9 +36,9 @@ export class ProductsComponent implements OnInit {
   }
 
   
-  addToCart(product: { id: number; name: string; price: number }): void {
-    this.cartService.addToCart(product);
-  }
+  // addToCart(product: { id: number; name: string; price: number }): void {
+  //   this.cartService.addToCart(product);
+  // }
 
   // addProduct(): void {
   //   const newProduct = {

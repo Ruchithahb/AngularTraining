@@ -18,6 +18,7 @@ import { CartComponent } from './cart/cart.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ContactComponent } from './contact/contact.component';
 import { RatingComponent } from './rating/rating.component';
+import { CounterComponent } from './counter/counter.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { RatingComponent } from './rating/rating.component';
     CartComponent,
     PaymentComponent,
     ContactComponent,
-    RatingComponent
+    RatingComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ import { HooksComponent } from './hooks/hooks.component';
 import { CartComponent } from './cart/cart.component';
 import { ContactComponent } from './contact/contact.component';
 import { RatingComponent } from './rating/rating.component';
+import { CounterComponent } from './counter/counter.component';
 
 const routes: Routes = [
   {path: ' ', component: AppComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path:'hooks',component:HooksComponent},
   {path:'cart',component:CartComponent},
   {path:'contact',component:ContactComponent},
-  {path:'rating',component:RatingComponent}
+  {path:'rating',component:RatingComponent},
+  {path:'counter',component:CounterComponent}
 ];
 
 @NgModule({

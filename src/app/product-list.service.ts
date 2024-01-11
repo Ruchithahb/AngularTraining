@@ -56,7 +56,7 @@ export class ProductListService {
 
   constructor() { }
 
-  getProducts(){
+  getProducts()  {
     return this.foodProducts
   }
   // addToCart(product: any): void {
