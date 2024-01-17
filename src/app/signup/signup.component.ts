@@ -33,8 +33,6 @@ export class SignupComponent implements OnInit {
     alert("thanks for the response");
   }
   onLogin(){
-
-
   }
 
 
